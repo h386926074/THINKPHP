@@ -1,0 +1,216 @@
+[ 2017-08-25T10:28:03+08:00 ] ::1 /home/user/user
+ERR: 1146:Table 'thinkphp.think_info' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `think_info`
+
+[ 2017-08-25T10:28:04+08:00 ] ::1 /home/user/user
+ERR: 1146:Table 'thinkphp.think_info' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `think_info`
+
+[ 2017-08-25T10:28:04+08:00 ] ::1 /home/user/user
+ERR: 1146:Table 'thinkphp.think_info' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `think_info`
+
+[ 2017-08-25T10:28:04+08:00 ] ::1 /home/user/user
+ERR: 1146:Table 'thinkphp.think_info' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `think_info`
+
+[ 2017-08-25T10:29:10+08:00 ] ::1 /home/user/user
+ERR: 1146:Table 'thinkphp.think_info' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `think_info`
+
+[ 2017-08-25T10:29:12+08:00 ] ::1 /home/user/user
+ERR: 1146:Table 'thinkphp.think_info' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `think_info`
+
+[ 2017-08-25T10:30:00+08:00 ] ::1 /home/user/user
+ERR: 1146:Table 'thinkphp.think_info' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `think_info`
+
+[ 2017-08-25T10:30:01+08:00 ] ::1 /home/user/user
+ERR: 1146:Table 'thinkphp.think_info' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `think_info`
+
+[ 2017-08-25T10:30:01+08:00 ] ::1 /home/user/user
+ERR: 1146:Table 'thinkphp.think_info' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `think_info`
+
+[ 2017-08-25T10:30:01+08:00 ] ::1 /home/user/user
+ERR: 1146:Table 'thinkphp.think_info' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `think_info`
+
+[ 2017-08-25T10:30:21+08:00 ] ::1 /home/user/user
+ERR: 1146:Table 'thinkphp.think_info' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `think_info`
+
+[ 2017-08-25T10:30:47+08:00 ] ::1 /home/user/user
+ERR: 1146:Table 'thinkphp.think_info' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `think_info`
+
+[ 2017-08-25T10:30:48+08:00 ] ::1 /home/user/user
+ERR: 1146:Table 'thinkphp.think_info' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `think_info`
+
+[ 2017-08-25T10:30:48+08:00 ] ::1 /home/user/user
+ERR: 1146:Table 'thinkphp.think_info' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `think_info`
+
+[ 2017-08-25T10:30:49+08:00 ] ::1 /home/user/user
+ERR: 1146:Table 'thinkphp.think_info' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `think_info`
+
+[ 2017-08-25T10:31:22+08:00 ] ::1 /home/user/user
+ERR: 1146:Table 'thinkphp.think_info' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `think_info`
+
+[ 2017-08-25T10:35:01+08:00 ] ::1 /home/user/user
+ERR: 1146:Table 'thinkphp.think_info' doesn't exist
+ [ SQL语句 ] : SELECT a.id,`a`,`user`,b.id,b.user FROM think_user a,think_info b 
+
+[ 2017-08-25T10:35:27+08:00 ] ::1 /home/user/user
+ERR: 1054:Unknown column 'a' in 'field list'
+ [ SQL语句 ] : SELECT a.id,`a`,`user` FROM think_user a 
+
+[ 2017-08-25T10:35:28+08:00 ] ::1 /home/user/user
+ERR: 1054:Unknown column 'a' in 'field list'
+ [ SQL语句 ] : SELECT a.id,`a`,`user` FROM think_user a 
+
+[ 2017-08-25T10:35:28+08:00 ] ::1 /home/user/user
+ERR: 1054:Unknown column 'a' in 'field list'
+ [ SQL语句 ] : SELECT a.id,`a`,`user` FROM think_user a 
+
+[ 2017-08-25T10:35:29+08:00 ] ::1 /home/user/user
+ERR: 1054:Unknown column 'a' in 'field list'
+ [ SQL语句 ] : SELECT a.id,`a`,`user` FROM think_user a 
+
+[ 2017-08-25T10:35:29+08:00 ] ::1 /home/user/user
+ERR: 1054:Unknown column 'a' in 'field list'
+ [ SQL语句 ] : SELECT a.id,`a`,`user` FROM think_user a 
+
+[ 2017-08-25T15:10:17+08:00 ] ::1 /home/user/user
+ERR: 1066:Not unique table/alias: 'think_user'
+ [ SQL语句 ] : SELECT * FROM `think_user` INNER JOIN think_user ON think_info.id=think_user.id  
+
+[ 2017-08-25T15:10:18+08:00 ] ::1 /home/user/user
+ERR: 1066:Not unique table/alias: 'think_user'
+ [ SQL语句 ] : SELECT * FROM `think_user` INNER JOIN think_user ON think_info.id=think_user.id  
+
+[ 2017-08-25T15:12:05+08:00 ] ::1 /home/user/user
+ERR: 1066:Not unique table/alias: 'think_user'
+ [ SQL语句 ] : SELECT * FROM `think_user` INNER JOIN think_user ON think_info.id=think_user.id  
+
+[ 2017-08-25T15:12:06+08:00 ] ::1 /home/user/user
+ERR: 1066:Not unique table/alias: 'think_user'
+ [ SQL语句 ] : SELECT * FROM `think_user` INNER JOIN think_user ON think_info.id=think_user.id  
+
+[ 2017-08-25T15:12:07+08:00 ] ::1 /home/user/user
+ERR: 1066:Not unique table/alias: 'think_user'
+ [ SQL语句 ] : SELECT * FROM `think_user` INNER JOIN think_user ON think_info.id=think_user.id  
+
+[ 2017-08-25T15:12:07+08:00 ] ::1 /home/user/user
+ERR: 1066:Not unique table/alias: 'think_user'
+ [ SQL语句 ] : SELECT * FROM `think_user` INNER JOIN think_user ON think_info.id=think_user.id  
+
+[ 2017-08-25T15:12:07+08:00 ] ::1 /home/user/user
+ERR: 1066:Not unique table/alias: 'think_user'
+ [ SQL语句 ] : SELECT * FROM `think_user` INNER JOIN think_user ON think_info.id=think_user.id  
+
+[ 2017-08-25T15:12:07+08:00 ] ::1 /home/user/user
+ERR: 1066:Not unique table/alias: 'think_user'
+ [ SQL语句 ] : SELECT * FROM `think_user` INNER JOIN think_user ON think_info.id=think_user.id  
+
+[ 2017-08-25T15:12:07+08:00 ] ::1 /home/user/user
+ERR: 1066:Not unique table/alias: 'think_user'
+ [ SQL语句 ] : SELECT * FROM `think_user` INNER JOIN think_user ON think_info.id=think_user.id  
+
+[ 2017-08-25T15:12:08+08:00 ] ::1 /home/user/user
+ERR: 1066:Not unique table/alias: 'think_user'
+ [ SQL语句 ] : SELECT * FROM `think_user` INNER JOIN think_user ON think_info.id=think_user.id  
+
+[ 2017-08-25T15:12:25+08:00 ] ::1 /home/user/user
+ERR: 1066:Not unique table/alias: 'think_user'
+ [ SQL语句 ] : SELECT * FROM `think_user` INNER JOIN think_user ON think_info.id=think_user.id  
+
+[ 2017-08-25T15:12:25+08:00 ] ::1 /home/user/user
+ERR: 1066:Not unique table/alias: 'think_user'
+ [ SQL语句 ] : SELECT * FROM `think_user` INNER JOIN think_user ON think_info.id=think_user.id  
+
+[ 2017-08-25T15:12:26+08:00 ] ::1 /home/user/user
+ERR: 1066:Not unique table/alias: 'think_user'
+ [ SQL语句 ] : SELECT * FROM `think_user` INNER JOIN think_user ON think_info.id=think_user.id  
+
+[ 2017-08-25T15:12:26+08:00 ] ::1 /home/user/user
+ERR: 1066:Not unique table/alias: 'think_user'
+ [ SQL语句 ] : SELECT * FROM `think_user` INNER JOIN think_user ON think_info.id=think_user.id  
+
+[ 2017-08-25T15:12:26+08:00 ] ::1 /home/user/user
+ERR: 1066:Not unique table/alias: 'think_user'
+ [ SQL语句 ] : SELECT * FROM `think_user` INNER JOIN think_user ON think_info.id=think_user.id  
+
+[ 2017-08-25T15:12:26+08:00 ] ::1 /home/user/user
+ERR: 1066:Not unique table/alias: 'think_user'
+ [ SQL语句 ] : SELECT * FROM `think_user` INNER JOIN think_user ON think_info.id=think_user.id  
+
+[ 2017-08-25T15:12:26+08:00 ] ::1 /home/user/user
+ERR: 1066:Not unique table/alias: 'think_user'
+ [ SQL语句 ] : SELECT * FROM `think_user` INNER JOIN think_user ON think_info.id=think_user.id  
+
+[ 2017-08-25T15:12:27+08:00 ] ::1 /home/user/user
+ERR: 1066:Not unique table/alias: 'think_user'
+ [ SQL语句 ] : SELECT * FROM `think_user` INNER JOIN think_user ON think_info.id=think_user.id  
+
+[ 2017-08-25T15:12:27+08:00 ] ::1 /home/user/user
+ERR: 1066:Not unique table/alias: 'think_user'
+ [ SQL语句 ] : SELECT * FROM `think_user` INNER JOIN think_user ON think_info.id=think_user.id  
+
+[ 2017-08-25T15:12:27+08:00 ] ::1 /home/user/user
+ERR: 1066:Not unique table/alias: 'think_user'
+ [ SQL语句 ] : SELECT * FROM `think_user` INNER JOIN think_user ON think_info.id=think_user.id  
+
+[ 2017-08-25T15:12:27+08:00 ] ::1 /home/user/user
+ERR: 1066:Not unique table/alias: 'think_user'
+ [ SQL语句 ] : SELECT * FROM `think_user` INNER JOIN think_user ON think_info.id=think_user.id  
+
+[ 2017-08-25T15:13:08+08:00 ] ::1 /home/user/user
+ERR: 1066:Not unique table/alias: 'think_user'
+ [ SQL语句 ] : SELECT * FROM `think_user` INNER JOIN think_user ON think_info.uid=think_user.id  
+
+[ 2017-08-25T15:13:09+08:00 ] ::1 /home/user/user
+ERR: 1066:Not unique table/alias: 'think_user'
+ [ SQL语句 ] : SELECT * FROM `think_user` INNER JOIN think_user ON think_info.uid=think_user.id  
+
+[ 2017-08-25T15:13:09+08:00 ] ::1 /home/user/user
+ERR: 1066:Not unique table/alias: 'think_user'
+ [ SQL语句 ] : SELECT * FROM `think_user` INNER JOIN think_user ON think_info.uid=think_user.id  
+
+[ 2017-08-25T15:13:09+08:00 ] ::1 /home/user/user
+ERR: 1066:Not unique table/alias: 'think_user'
+ [ SQL语句 ] : SELECT * FROM `think_user` INNER JOIN think_user ON think_info.uid=think_user.id  
+
+[ 2017-08-25T15:13:09+08:00 ] ::1 /home/user/user
+ERR: 1066:Not unique table/alias: 'think_user'
+ [ SQL语句 ] : SELECT * FROM `think_user` INNER JOIN think_user ON think_info.uid=think_user.id  
+
+[ 2017-08-25T15:13:09+08:00 ] ::1 /home/user/user
+ERR: 1066:Not unique table/alias: 'think_user'
+ [ SQL语句 ] : SELECT * FROM `think_user` INNER JOIN think_user ON think_info.uid=think_user.id  
+
+[ 2017-08-25T15:26:32+08:00 ] ::1 /home/user/user
+ERR: 1066:Not unique table/alias: 'think_user'
+ [ SQL语句 ] : SELECT * FROM `think_user` INNER JOIN think_user ON think_info.uid = think_user.id  
+
+[ 2017-08-25T15:26:33+08:00 ] ::1 /home/user/user
+ERR: 1066:Not unique table/alias: 'think_user'
+ [ SQL语句 ] : SELECT * FROM `think_user` INNER JOIN think_user ON think_info.uid = think_user.id  
+
+[ 2017-08-25T15:26:34+08:00 ] ::1 /home/user/user
+ERR: 1066:Not unique table/alias: 'think_user'
+ [ SQL语句 ] : SELECT * FROM `think_user` INNER JOIN think_user ON think_info.uid = think_user.id  
+
+[ 2017-08-25T15:27:02+08:00 ] ::1 /home/user/user
+ERR: 1066:Not unique table/alias: 'think_user'
+ [ SQL语句 ] : SELECT * FROM `think_user` INNER JOIN think_user ON think_info.id = think_user.id  
+
+[ 2017-08-25T15:27:03+08:00 ] ::1 /home/user/user
+ERR: 1066:Not unique table/alias: 'think_user'
+ [ SQL语句 ] : SELECT * FROM `think_user` INNER JOIN think_user ON think_info.id = think_user.id  
+
