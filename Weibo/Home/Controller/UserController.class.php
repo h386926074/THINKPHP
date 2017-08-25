@@ -172,42 +172,85 @@ class UserController extends Controller {
 //        dump($user->distinct(true)->field('user')->select());
 //        dump($user->cache(true)->select());
 
+        /*
 //        $user = new UserModel();
 ////        dump($user->scope('sql2')->scope('sql1')->select());
 ////        dump($user->scope('sql2',array('limit'=>4))->select());//调整sql2的limit
 //        dump($user->sql2()->select());
+        */
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        /*
+         * CURD 操作
+         * */
 
     }
+
+    public function create(){
+        echo '<meta http-equiv="Content-Type" content="text/html; charset=UTF8">';
+        $user = M('User');
+        $data['user'] = '樱桃小丸子';
+        $data['email'] = 'yintao@qq.com';     //用这种方法可以覆盖传过来的数据
+
+        dump($user->create($data));     //create 只是创建了数据对像
+//        echo '123';
+
+        
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
