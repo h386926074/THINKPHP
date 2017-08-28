@@ -9,6 +9,7 @@
 namespace Home\Controller;
 
 use Home\Model\UserModel;
+use Org\Util\Date;
 use Think\Controller;
 use Think\Model;
 
@@ -37,7 +38,7 @@ class UserController extends Controller {
 //        $condition['_logic'] ='or';   //查询条件 是or
 //        var_dump($user->where($condition)->select());
         // 3> 使用对像的方式查询
-//        $condition = new \stdClass();  //php5 空类
+//        $condition = new \stdClass();  //php5 空类  //实例化后不能添加方法 一般用来传参数
 //        $condition->id=1;
 //        $condition->user ='小新';
 //        $condition->_logic = 'OR';
@@ -189,13 +190,40 @@ class UserController extends Controller {
     public function create(){
         echo '<meta http-equiv="Content-Type" content="text/html; charset=UTF8">';
         $user = M('User');
-        $data['user'] = '樱桃小丸子';
-        $data['email'] = 'yintao@qq.com';     //用这种方法可以覆盖传过来的数据
-
-        dump($user->create($data));     //create 只是创建了数据对像
+//        $data['user'] = '樱桃小丸子';
+//        $data['email'] = 'yintao@qq.com';     //用这种方法可以覆盖传过来的数据
+//
+//        dump($user->create($data));     //create 只是创建了数据对像
 //        echo '123';
 
-        
+
+//        $data['user'] =$_POST['user'];
+//        $data['email'] = $_POST['email'];   //用$data 变量来接收 提交过来的值
+//        $data['date'] =  date('Y-m-d H:i:s');
+//        dump($user->create($data));
+
+        //默认是以post  方法接收的
+//        $data = new \stdClass();
+//        $data ->user = $_POST['user'];
+//        $data ->email = $_POST['email'];
+//        dump($user->create($data));
+
+        //如果以get方法接收  需要修改参数
+//        dump($user->create($_GET));  //第二个参数 设置要进行的操作  有两个参数 post/get 一定要写
+//        dump($user->create($_POST,Model::MODEL_INSERT));
+
+//        dump($user->field('user')->create());
+
+
+//        //在模型里限制字段
+////        $user = D('User');
+//        dump($user->create());
+
+        $data = $user->create();
+        $data['date'] = date('Y-m-d H:i:s');
+        $user ->add($data);
+
+
     }
 }
 

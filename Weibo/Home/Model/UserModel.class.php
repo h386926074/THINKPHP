@@ -37,4 +37,7 @@ class UserModel extends Model {
 
     );
 
+    protected  $insertFields='user';
+    protected  $updateFields = 'user';
+
 }
