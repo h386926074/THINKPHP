@@ -1,0 +1,12 @@
+[ 2017-08-29T10:36:31+08:00 ] ::1 /index.php/home/user/save
+ERR: 1690:BIGINT UNSIGNED value is out of range in '(`thinkphp`.`think_user`.`count` - 1)'
+ [ SQL语句 ] : UPDATE `think_user` SET `count`=count-1 WHERE `id` = 1
+
+[ 2017-08-29T10:36:33+08:00 ] ::1 /index.php/home/user/save
+ERR: 1690:BIGINT UNSIGNED value is out of range in '(`thinkphp`.`think_user`.`count` - 1)'
+ [ SQL语句 ] : UPDATE `think_user` SET `count`=count-1 WHERE `id` = 1
+
+[ 2017-08-29T10:36:33+08:00 ] ::1 /index.php/home/user/save
+ERR: 1690:BIGINT UNSIGNED value is out of range in '(`thinkphp`.`think_user`.`count` - 1)'
+ [ SQL语句 ] : UPDATE `think_user` SET `count`=count-1 WHERE `id` = 1
+

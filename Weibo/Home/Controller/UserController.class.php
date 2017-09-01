@@ -189,7 +189,7 @@ class UserController extends Controller {
 
     public function create(){
         echo '<meta http-equiv="Content-Type" content="text/html; charset=UTF8">';
-        $user = M('User');
+//        $user = M('User');
 //        $data['user'] = '樱桃小丸子';
 //        $data['email'] = 'yintao@qq.com';     //用这种方法可以覆盖传过来的数据
 //
@@ -219,12 +219,160 @@ class UserController extends Controller {
 ////        $user = D('User');
 //        dump($user->create());
 
-        $data = $user->create();
-        $data['date'] = date('Y-m-d H:i:s');
-        $user ->add($data);
+//        $data = $user->create();
+//        $data['date'] = date('Y-m-d H:i:s');
+//        $user ->add($data);
+
+//        //使用data连贯方法
+//        $data = $user->create();
+//        $data['date'] = date('Y-m-d H:i:s');
+//        $user->data($data)->add();
+
+        //data 连贯方法  支持字符串，数组，对像
+        $user = M('User');
+        $data = 'user=星矢&email=xinshi@qq.com&date='.date('Y-m-d H:i:s');
+        $user->data($data)->add();
+    }
+
+    public function select(){
+        echo "<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF8\">";
+        $user = M('User');
+//        dump($user->select());
+//        dump($user->find());   //获取第一条数据
+//        dump($user->getField('user'));  //取得第一条的 user字段数据
+//        dump($user->getField('user',true)); //取所有数据user
+//        dump($user->getField('user,email',2));
+        dump($user->getField('id,user,email',':'));//主键放前边 会以主键来进行分组
+
+    }
+
+    //更新
+    public function save(){
+        echo "<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF8\">";
+
+        $user = M('User');
+        /*
+        $data['user'] = '蜡笔大新新';
+        $data['email'] = 'daxing@163.com';
+        $map['id'] = 1;
+        $user->where($map)->save($data);
+        */
+
+        /*
+        //save 会自动搜索下边的字段主键 并以此来修改内容
+        $data['id']=1;
+        $data['user'] = '蜡笔老新';
+        $data['email'] = 'laoxin@qq.com';
+        $user->save($data);
+        */
+
+        //结合create()
+//        $user->create();
+//        $user->save();
+
+        /*  //只修改一条字段
+        $map['id'] =1;
+        $user->where($map)->setField('user','新新');
+        */
+
+        /*统计累加
+         * */
+        $map['id'] = 1;
+//        $user->where($map)->setInc('count',1);  //字段每次加1
+        $user->where($map)->setDec('count',1);  //字段每次减1
+
+    }
+
+
+    public function delete(){
+
+        $user = M('user');
+//        $user->delete(8);//默认删除 主键为8的数据
+
+        //根据ID 来删除
+//        $map['id'] =16;
+//        $user->where($map)->delete();
+
+        //批量删除多个
+//        $user->delete('1,3,5');
+
+        //排序删除
+//        $map['count'] = 0;
+//        $user->where($map)->order(array('date'=>'DESC'))->limit(2)->delete();
+
+        //删除所有数据，慎用
+//        echo $user->where('1')->delete();    //"1"的意思是 where参数放一个真值
+
+
 
 
     }
+
+
+    //ActiveReocrd 简化CURD 操作
+
+    public function ar(){
+//        echo "<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF8\">";
+
+        echo "<meta http-equiv='Content-Type' content='text/html; charset=UTF8' >";
+
+//        $user = M('User');
+//        $user->user='形式';
+//        $user->email = 'xingshi@qq.com';
+//        $user->date = date('Y-m-d H:i:s');
+//        $user->add();
+
+        /*
+        //如果用post 提交
+        $user = M('User');
+        $user->create();
+        $user->date = date('Y-m-d H:i:s');
+        $user->add();
+        */
+
+//        $user = M("User");
+//        dump($user->find(4));
+//
+//        $user->getByUser('新新');
+//        echo $user->email;
+
+//        dump($user->select('1,3'));
+
+
+        //修改一条数据
+//        $user->find(1);
+//        $user->user = '蜡笔小新';
+//        $user->save();
+//
+//        //删除当前找到的数据
+//        $user->delete();
+
+
+        /**/
+        //删除主键是多少的数据 可同时删除多个值
+        $user = M("User");
+        $user->delete(10);  //delete(10,11)
+
+
+
+    }
+
+
+    public function add(){
+        echo "<meta http-equiv='Content-Type' content='text/html; charset=UTF8' >";
+
+        $user = D('User');
+        $data['user'] = "蜡笔小新";
+        if ($user->create($data)){
+
+            echo "所有字段验证成功！";
+        }else{
+
+            dump($user->getError());
+        }
+
+    }
+
 }
 
 
